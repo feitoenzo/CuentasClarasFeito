@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APP CUENTAS CLARAS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+     <form>
+        <label for="nombre1">Nombre:</label>
+        <input type="text" id="nombre1" name="nombre1">
+        <label for="monto1">Monto:</label>
+        <input type="number" id="monto1" name="monto1">
+        <input type="button" value="Agregar usuario" onclick="addUser()">
+        <input type="button" value="Listo" onclick="stopAddingUsers()" style="display:block;">
+    </form>
+    <ul id="userList"></ul>
+    <button type="button" id="calculate" style="display:none"
+        onclick="calculatePromedio();calculatePayments()">Calcular</button>
+    <div id="result"></div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+</body>
+
+</html>
